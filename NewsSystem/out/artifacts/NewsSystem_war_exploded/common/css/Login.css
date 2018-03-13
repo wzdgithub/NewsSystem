@@ -1,0 +1,148 @@
+*{
+	margin:0;
+	padding:0;
+	font-family:Microsoft YaHei;
+}
+body{
+	background: url(../images/img001.png);
+	margin:0;
+	padding:0;
+}
+.content{
+	width:800px;
+	height:450px;
+	margin:0 auto;
+	margin-top:10%;
+	border-radius: 10px;
+	background: #fff;
+}
+.login_left{
+	float:left;
+	width: 399px;
+	height: 350px;
+	margin-top: 40px;
+	padding: 10px 50px 10px 50px;
+	border-right:1px dashed #CBCBCB; 
+}
+.login_left img{
+	width: 399px;
+	height: 350px;
+}
+.login_right{
+	float: left;
+	width: 300px;
+	height: 450px;
+}
+.login_logo{
+	height: 70px;
+}
+h2{
+	margin:40px 0px 10px 50px;
+}
+label{
+	display: inline-block;
+	width: 70px;
+	margin: 10px 10px 10px 10px;
+	text-align: right;
+}
+input[type="text"],input[type="password"]{
+	width: 200px;
+	height: 30px;
+	border-style:solid;
+	border-width:2px;
+	border-color:rgb(0,84,146);
+	outline:none;
+	border-radius:8px;
+	margin:10px 0px 10px 50px;
+	padding-left: 8px;
+}
+input[type="submit"]{
+	width: 100px;
+	height: 30px;
+	font-size: 18px;
+	border-radius: 5px;
+	margin:10px 0px 0px 50px;
+	background: rgb(0,84,146);
+	border:2px solid rgb(0,84,146);
+	outline: none;
+	color: #fff;
+	cursor: pointer;
+}
+.login_a{
+	color:rgb(0,84,146);
+	margin-left:16px;
+	text-decoration: none;
+}
+.login_other{
+	width:192px;
+	margin-left:50px;
+}
+.login_other p{
+	font-size:14px;
+	margin:20px 0px 10px 0px;
+	color:rgb(0,84,146);
+}
+.div0002{
+	width:48px;
+	height:48px;
+	float:left;
+	background-image:url(../images/regIcon0.png);
+	background-position:3px 2px;
+	background-repeat:no-repeat;
+}
+.div0003{
+	width:48px;
+	height:48px;
+	background-image:url(../images/regIcon0.png);
+	background-position:-46px 2px;
+	background-repeat:no-repeat;
+	float:left;
+}
+.div0004{
+	width:48px;
+	height:48px;
+	background-image:url(../images/regIcon0.png);
+	background-position:-94px 2px;
+	background-repeat:no-repeat;
+	float:left;
+}
+.div0005{
+	width:48px;
+	height:48px;
+	background-image:url(../images/regIcon0.png);
+	background-position:-140px 2px;
+	background-repeat:no-repeat;
+	float:left;
+}
+.div0006{
+	width:48px;
+	height:48px;
+	background-image:url(../images/regIcon0.png);
+	background-position:-187px 5px;
+	background-repeat:no-repeat;
+	float:left;
+}
+.div0007{
+	width:48px;
+	height:48px;
+	background-image:url(../images/regIcon0.png);
+	background-position:2px -46px;
+	background-repeat:no-repeat;
+	float:left;
+}
+.div0008{
+	width:48px;
+	height:48px;
+	background-image:url(../images/regIcon0.png);
+	background-position:-47px -46px;
+	background-repeat:no-repeat;
+	float:left;
+}
+.div0009{
+	width:48px;
+	height:48px;
+	background-image:url(../images/regIcon0.png);
+	background-position:-94px -46px;
+	background-repeat:no-repeat;
+	float:left;
+}

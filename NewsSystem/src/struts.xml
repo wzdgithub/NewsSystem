@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+    <constant name="struts.devMode" value="true"/>
+    <package name="news" namespace="/" extends="struts-default">
+        <action name="news_*" class="com.action.NewsAction" method="{1}">
+            <result name="homeSuccess">/home.jsp</result>
+            <result name="selectNewsSuccess">/news.jsp</result>
+            <result name="AllNewsByAdminSuccess">/admin/newsManage.jsp</result>
+            <result name="insertNewsSuccess">/admin/adminSuccess.jsp</result>
+            <result name="deleteNewsSuccess">/admin/adminSuccess.jsp</result>
+            <result name="updateNewsSuccess">/admin/adminSuccess.jsp</result>
+            <result name="selectNewsByCategorySuccess">/newses.jsp</result>
+            <result name="selectNewsByTitleSuccess">/newses.jsp</result>
+        </action>
+    </package>
+    <package name="user" namespace="/" extends="struts-default">
+        <action name="user_*" class="com.action.UserAction" method="{1}">
+            <result name="loginUserSuccess" type="chain">news_home</result>
+            <result name="loginUserFailure">/failed.jsp</result>
+            <result name="selectUserSuccess">/admin/userManage.jsp</result>
+            <result name="deleteUserSuccess">/admin/adminSuccess.jsp</result>
+            <result name="updateUserDetailsSuccess">/success.jsp</result>
+            <result name="registerSuccess">/success.jsp</result>
+            <result name="registerFilure">/registerfailed.jsp</result>
+        </action>
+    </package>
+    <package name="comment" namespace="/" extends="struts-default">
+        <action name="comment_*" class="com.action.CommentAction" method="{1}">
+            <result name="insertCommentSuccess" type="chain">news_selectNews</result>
+            <result name="allCommentByAdminSuccess">/admin/commentManage.jsp</result>
+            <result name="deleteCommentSuccess">/admin/adminSuccess.jsp</result>
+            <result name="commentPassSuccess">/admin/adminSuccess.jsp</result>
+            <result name="commentNoPassSuccess">/admin/adminSuccess.jsp</result>
+        </action>
+    </package>
+    <package name="score" namespace="/" extends="struts-default">
+        <action name="score_*" class="com.action.ScoreAction" method="{1}">
+            <result name="insertScoreSuccess" type="chain">news_selectNews</result>
+            <result name="selectScoreSuccess">/admin/scoreManage.jsp</result>
+            <result name="deleteScoreSuccess">/admin/adminSuccess.jsp</result>
+        </action>
+    </package>
+    <package name="feedback" namespace="/" extends="struts-default">
+        <action name="feedback_*" class="com.action.FeedbackAction" method="{1}">
+            <result name="insertFeedbackSuccess">/success.jsp</result>
+            <result name="selectFeedbackSuccess">/admin/feedbackManage.jsp</result>
+            <result name="deleteFeedback">/admin/adminSuccess.jsp</result>
+        </action>
+    </package>
+    <package name="admin" namespace="/" extends="struts-default">
+        <action name="admin_*" class="com.action.AdminAction" method="{1}">
+            <result name="loginAdminSuccess">/admin/admin.jsp</result>
+            <result name="loginAdminFailure">/failed.jsp</result>
+        </action>
+    </package>
+</struts>

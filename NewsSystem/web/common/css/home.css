@@ -1,0 +1,160 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+body{
+	font-family:"Microsoft YaHei","\u5FAE\u8F6F\u96C5\u9ED1","Arial","SimSun","\u5B8B\u4F53";
+}
+.header{
+	width:100%;
+	min-width: 1000px;
+	height:40px;
+	background-color:#f7f7f7;
+	border-top: 3px solid #213e82;
+    border-bottom: 1px solid #e5e5e5;
+}
+.header_center{
+	width:1000px;
+	height:100%;
+	margin:0 auto;
+	line-height:40px;
+}
+.header_logo{
+	display:inline-block;
+	float:left;
+	margin-right:50px;
+}
+a{
+	text-decoration: none;
+}
+.header_menu li{
+	width:60px;
+	float:left;
+	list-style-type:none;
+	text-align:center;
+}
+.login,.register{
+	width:60px;
+	height:100%;
+	display:inline-block;
+	float:right;
+	text-align:center;
+	border-left: 1px solid #f7f7f7;
+	border-right: 1px solid #f7f7f7;
+}
+.login:hover,.register:hover{
+	background: #eaeaea;
+	border-left: 1px solid #b8cdef;
+	border-right: 1px solid #b8cdef;
+}
+.header_search{
+	height:100%;
+	display: inline-block;
+	float:right;
+	margin-left:20px;
+}
+.search_title{
+	width:170px;
+}
+.search_submit{
+	width:50px;
+}
+.content{
+	width:1000px;
+	margin:0 auto;
+}
+.content_part1,.content_part2,.content_part3,
+.content_part4,.content_part5,.content_part6{
+	width:490px;
+	height:300px;
+	display:inline-block;
+	float:left;
+	margin-top:20px;
+}
+.content_part1,.content_part3,.content_part5{
+	margin-right:10px;
+}
+.content_part2,.content_part4,.content_part6{
+	margin-left:10px;
+}
+.part_header{
+	width:100%;
+	height:35px;
+	border-top:2px solid #990000;
+	border-bottom:1px solid #d6d6d6;
+	line-height:35px;
+}
+.more{
+	float:right;
+	display:block;
+	margin-right:10px;
+}
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.clearfix{
+	*zoom:1;
+}
+.part_content td{
+	height:30px;
+}
+
+.footer{
+	width:100%;
+	height:200px;
+	background:#ccc;
+}
+
+.viwepager{
+	width:1000px;
+	height:400px;
+	overflow:hidden;
+	margin:0 auto;
+	margin-top:20px;
+	position: relative;
+}
+.viwepager_img img{
+	width:1000px;
+	height:400px;
+	background-size:cover;
+	float:left;
+}
+.content li{
+	margin-left: 20px;
+}
+.foot{
+	 width: 100%;
+	 height: 300px;
+	 background: #f7f7f7;
+ }
+.contact{
+	width: 30%;
+	height: 205px;
+	padding-top: 80px;
+	margin-left: 15%;
+}
+.contact>div:first-child{
+	height: 30px;
+	font-family: "Microsoft YaHei";
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 30px;
+	text-indent: 2em;
+	border-bottom: 2px solid #F44336;
+}
+.contact>div:not(:first-child){
+	height: 30px;
+	line-height: 30px;
+	padding-top: 15px;
+	padding-left: 12px;
+}
+a{
+	color: #000;
+}
+a:hover{
+	color:blue;
+}

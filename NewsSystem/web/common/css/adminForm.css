@@ -1,0 +1,19 @@
+.content{
+    width: 400px;
+    height: 800px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-left: -200px;
+    margin-top: -300px;
+}
+form input[type="text"]{
+    width: 200px;
+    height: 25px;
+    margin: 5px;
+}
+form textarea{
+    width: 400px;
+    height: 400px;
+    resize: none;
+}

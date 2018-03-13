@@ -1,0 +1,28 @@
+.content{
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.content_left{
+    width: 325px;
+    float: left;
+    background: #f0f2ee;
+}
+.content_right{
+    width: 665px;
+    float: left;
+    margin-left: 10px;
+    background: #fff;
+}
+.clhd{
+    background: url("../picture/rkbg_yh_01.png") no-repeat 0 0;
+    height: 31px;
+    line-height: 31px;
+    width: 100%;
+}
+.crhd{
+    background: url("../picture/jqtit_yh_01.png") no-repeat 0 0;
+    height: 30px;
+    line-height: 30px;
+    width: 100%;
+}
