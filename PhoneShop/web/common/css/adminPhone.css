@@ -1,0 +1,18 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.adminPhone-content{
+	margin-top: 40px;
+	margin-left: 40px;
+}
+.adminPhone-content form div{
+	height: 40px;
+}
+.adminPhone-content form div label{
+	width: 100px;
+	display: inline-block;
+}
+.adminPhone-content form input[type=text]{
+	width: 300px;
+}

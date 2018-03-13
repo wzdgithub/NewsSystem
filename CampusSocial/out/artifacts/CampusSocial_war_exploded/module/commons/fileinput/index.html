@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!-- release v4.3.6, copyright 2014 - 2017 Kartik Visweswaran -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Krajee JQuery Plugins - &copy; Kartik</title>
+        <link rel="stylesheet" href="/module/commons/bootstrap/css/bootstrap.min.css">
+        <script type="application/javascript" src="/module/commons/bootstrap/js/bootstrap.min.js"></script>
+        <script type="application/javascript" src="/module/commons/js/jquery-3.2.1.min.js"></script>
+        <link rel="stylesheet" href="/module/commons/fileinput/css/fileinput.min.css">
+        <script type="application/javascript" src="/module/commons/fileinput/js/fileinput.min.js"></script>
+        <script type="application/javascript" src="/module/commons/fileinput/js/locales/zh.js"></script>
+    </head>
+    <body>
+
+                    
+        <form enctype="multipart/form-data">
+            <label>简体中文</label>
+            <input id="file-zh" name="file-zh[]" type="file" multiple>
+        </form>
+    </body>
+	<script>
+    $('#file-zh').fileinput({
+        language: 'zh',
+        uploadUrl: '#',
+        allowedFileExtensions : ['jpg', 'png','gif'],
+    });
+	</script>
+</html>

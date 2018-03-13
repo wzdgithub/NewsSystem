@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+        <constant name="struts.devMode" value="true"/>
+        <package name="phone" namespace="/" extends="struts-default">
+                <action name="phone_*" class="com.action.PhoneAction" method="{1}">
+                        <result name="homeSuccess">/home.jsp</result>
+                        <result name="insertPhoneSuccess">/admin/adminSuccess.jsp</result>
+                        <result name="insertPhoneFailed">/admin/adminSuccess.jsp</result>
+                        <result name="selectPhoneByCategorySuccess">/goods.jsp</result>
+                        <result name="selectPhoneByIdSuccess">/phone.jsp</result>
+                        <result name="selectPhoneSuccess">/admin/goodsManage.jsp</result>
+                        <result name="updatePhoneByIdSuccess">/admin/adminSuccess.jsp</result>
+                        <result name="deletePhoneByIdSuccess">/admin/adminSuccess.jsp</result>
+                        <result name="selectPhoneBySalesSuccess">/goods.jsp</result>
+                        <result name="selectPhoneByPriceSuccess">/goods.jsp</result>
+                        <result name="selectPhoneByDateSuccess">/goods.jsp</result>
+                        <result name="selectPhoneByNameSuccess">/goods.jsp</result>
+                </action>
+        </package>
+        <package name="user" namespace="/" extends="struts-default">
+                <action name="user_*" class="com.action.UserAction" method="{1}">
+                        <result name="registerSuccess">/login.jsp</result>
+                        <result name="loginSuccess">/success.jsp</result>
+                        <result name="loginFailed">/failed.jsp</result>
+                        <result name="logoutSuccess">/success.jsp</result>
+                        <result name="updateUserDetailsSuccess">/success.jsp</result>
+                        <result name="selectUserSuccess">/admin/userManage.jsp</result>
+                        <result name="deleteUserSuccess">/admin/adminSuccess.jsp</result>
+                </action>
+        </package>
+        <package name="shopCart" namespace="/" extends="struts-default">
+                <action name="shopCart_*" class="com.action.ShopCartAction" method="{1}">
+                        <result name="insertShopCartSuccess">/success.jsp</result>
+                        <result name="selectShopCartSuccess">/personal/shopCart.jsp</result>
+                        <result name="deleteShopCartSuccess">/success.jsp</result>
+                </action>
+        </package>
+        <package name="bill" namespace="/" extends="struts-default">
+                <action name="bill_*" class="com.action.BillAction" method="{1}">
+                        <result name="insertBillSuccess">/success.jsp</result>
+                        <result name="selectBillSuccess">/personal/personalBill.jsp</result>
+                        <result name="deleteBillSuccess">/success.jsp</result>
+                        <result name="selectBillAdminSuccess">/admin/billManage.jsp</result>
+                </action>
+        </package>
+        <package name="comment" namespace="/" extends="struts-default">
+                <action name="comment_*" class="com.action.CommentAction" method="{1}">
+                        <result name="selectCommentSuccess">/admin/commentManage.jsp</result>
+                </action>
+        </package>
+        <package name="feedback" namespace="/" extends="struts-default">
+                <action name="feedback_*" class="com.action.FeedbackAction" method="{1}">
+                        <result name="insertFeedbackSuccess">/success.jsp</result>
+                        <result name="selectFeedbackSuccess">/admin/feedbackManage.jsp</result>
+                        <result name="deleteFeedback">/admin/adminSuccess.jsp</result>
+                </action>
+        </package>
+        <package name="ad" namespace="/" extends="struts-default">
+                <action name="ad_*" class="com.action.AdAction" method="{1}">
+                        <result name="insertAdSuccess">/admin/adminSuccess.jsp</result>
+                        <result name="deleteAdSuccess">/admin/adminSuccess.jsp</result>
+                        <result name="selectAdSuccess">/admin/adManage.jsp</result>
+                </action>
+        </package>
+        <package name="admin" namespace="/" extends="struts-default">
+                <action name="admin_*" class="com.action.AdminAction" method="{1}">
+                        <result name="loginAdminSuccess">/admin/admin.jsp</result>
+                        <result name="loginAdminFailed">/failed.jsp</result>
+                </action>
+        </package>
+</struts>

@@ -1,0 +1,22 @@
+.more-question{
+    padding: 15px;
+}
+.more-question .media{
+    word-break: break-all;
+}
+.question-title{
+    height: 19px;
+    overflow: hidden;
+}
+.question-detail{
+    max-height: 60px;
+    overflow: hidden;
+}
+.ques{
+    text-decoration: none;
+    color: #000;
+}
+.ques:hover{
+    text-decoration: none;
+    color: #000;
+}

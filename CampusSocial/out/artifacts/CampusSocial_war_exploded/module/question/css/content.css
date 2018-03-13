@@ -1,0 +1,47 @@
+.ques-container{
+    width: 100%;
+    padding: 0;
+}
+.ques-container .ques-content{
+    width:100%;
+    margin:0;
+    background-color: #fff;
+}
+.ques-container .ques-content .main-content{
+    padding: 0 30px;
+}
+.ques-title{
+    padding:15px 15px 0 15px;
+}
+.ques-detail{
+    padding:15px;
+}
+.ques-detail p{
+    padding-top: 10px;
+}
+.ques-detail p span{
+    margin-right: 10px;
+}
+.answer-content{
+    padding:10px 55px;
+}
+.answer {
+    padding: 15px;
+}
+.answer-btn{
+    margin-top:15px;
+}
+.answer-sub{
+    position: absolute;
+    right: 55px;
+    bottom: 45px;
+}
+.write-answer{
+    border: 1px solid #f5f8fa;
+    background-color: #f5f8fa;
+    -webkit-box-shadow: 0 1px 1px #f5f8fa;
+    box-shadow: 0 1px 1px #f5f8fa;
+}
+.write-answer .panel-heading{
+    border: 1px solid #ddd;
+}

@@ -1,0 +1,58 @@
+body{
+    background-color: #f5f8fa;
+}
+.navbar-default .navbar-brand,.navbar-default .navbar-nav>li>a{
+    color: #ffffff;
+}
+.navbar-default .navbar-nav>li>.bar-a:hover{
+    background-color: #563d7c;
+}
+.navbar-default .navbar-nav>li>a:hover{
+    color: #ffffff;
+}
+.navbar-default .navbar-nav>li>a:focus{
+    color: #ffffff;
+}
+.navbar-default{
+    background: #1da1f2;
+}
+.content-wrap .container .row .sidebar .widget{
+    background-color: #fff;
+    background-clip: inherit;
+    border: 1px solid #e6ecf0;
+    border-radius: 5px;
+    line-height: inherit;
+}
+.content-wrap .container .row .sidebar .widget .title{
+    background-color: #1da1f2;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 40px;
+    color: #fff;
+    font-size: large;
+    text-align: center;
+    line-height: 40px;
+}
+.content-wrap .container .row .sidebar .widget .content{
+    padding: 10px;
+}
+.panel-title>a:hover,.panel-title>a:focus{
+    text-decoration: none;
+}
+.add-group{
+    width: 100%;
+}
+.send-post .send-sub{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.send-select{
+    position: absolute;
+    right: 70px;
+    bottom: 0;
+    height: 32px;
+}
+.glyphicon-thumbs-up:hover{
+    cursor: hand;
+}
